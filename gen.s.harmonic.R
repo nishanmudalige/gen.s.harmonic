@@ -23,11 +23,12 @@ library(Matrix)
 library(pracma)
 library(assertr)
 
-
+# function to duplicate a row times
 rep.row<-function(x,n){
   matrix(rep(x,each=n),nrow=n)
 }
 
+# function to duplicate a column times
 rep.col<-function(x,n){
   matrix(rep(x,each=n), ncol=n, byrow=TRUE)
 }
