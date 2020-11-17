@@ -6,25 +6,19 @@
 # from Google Cloud.
 
 # We use the general spherical harmonics as defined by Dai and Xu
-# in Approximation Theory and Harmonic Analysis on Spheres and Balls
+# in "Approximation Theory and Harmonic Analysis on Spheres and Balls".
 
 library(orthopolynom)
 library(pracma)
 library(matrixcalc)
 library(mefa)
-library(glmnet)
 library(Directional)
 library(hypergeo)
 
-# Run function in simdd
-library(matrixcalc)
 library(stringr)
 library(assertr)
-
-# For simulations
 library(Matrix)
-library(pracma)
-library(assertr)
+library(glmnet)
 
 # function to duplicate a row times
 rep.row<-function(x,n){
